@@ -4,31 +4,30 @@ icon = "system-shutdown"
 
 [[entries]]
 text = "Lock Screen"
-action = "hyprlock"
 icon = "system-lock-screen"
+actions = { "lock" = "hyprlock" }
 
 [[entries]]
 text = "Logout Hyprland"
 icon = "system-log-out"
-action = "uwsm stop"
+actions = { "logout" = "uwsm stop" }
 
 [[entries]]
 text = "Suspend"
 icon = "system-suspend"
-action = "hyprlock & sleep 0.5; systemctl suspend"
+actions = { "suspend" = "hyprlock & sleep 0.5; systemctl suspend" }
 
 [[entries]]
 text = "Reboot"
 icon = "system-reboot"
-action = "systemctl reboot"
+actions = { "reboot" = "systemctl reboot" }
 
 [[entries]]
 text = "Power Off"
 icon = "system-shutdown"
-action = "systemctl poweroff"
+actions = { "poweroff" = "systemctl poweroff" }
 
 [[entries]]
 text = "Kill User Session"
 icon = "application-exit"
-action = "loginctl kill-user $USER"
-
+actions = { "kill" = "loginctl kill-user $USER" }
