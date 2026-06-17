@@ -1,0 +1,146 @@
+# Layout order (similar to i3's tiling modes)
+layouts:
+  - tall
+  - wide
+  - fullscreen
+  - column
+
+# Modifier keys (using option as primary mod, like i3's $mod)
+mod1:
+  - option
+mod2:
+  - option
+  - shift
+
+# Window appearance (gaps like i3-gaps)
+window-margins: true
+window-margin-size: 5
+screen-padding-left: 5
+screen-padding-right: 5
+screen-padding-top: 5
+screen-padding-bottom: 5
+
+# Disable margins when only one window (smart gaps)
+smart-window-margins: false
+
+# Window behavior
+float-small-windows: false
+new-windows-to-main: false
+floating-is-blacklist: true
+floating: []
+
+# Display settings
+ignore-menu-bar: true
+enables-layout-hud: true
+enables-layout-hud-on-space-change: true
+
+# Window management
+window-resize-step: 5
+restore-layouts-on-launch: true
+
+# Keybindings (i3-style)
+# Focus windows (vim-style navigation)
+focus-ccw:
+  mod: mod1
+  key: k
+
+focus-cw:
+  mod: mod1
+  key: j
+
+# Swap windows
+swap-ccw:
+  mod: mod2
+  key: k
+
+swap-cw:
+  mod: mod2
+  key: j
+
+swap-main:
+  mod: mod1
+  key: return
+
+# Layout controls
+cycle-layout:
+  mod: mod1
+  key: space
+
+cycle-layout-backward:
+  mod: mod2
+  key: space
+
+# Resize main pane (like i3's resize mode)
+shrink-main:
+  mod: mod1
+  key: h
+
+expand-main:
+  mod: mod1
+  key: l
+
+# Increase/decrease windows in main pane
+increase-main:
+  mod: mod1
+  key: comma
+
+decrease-main:
+  mod: mod1
+  key: period
+
+# Toggle floating (like i3's mod+shift+space)
+toggle-float:
+  mod: mod2
+  key: t
+
+# Focus screens (multi-monitor)
+focus-screen-1:
+  mod: mod1
+  key: "1"
+
+focus-screen-2:
+  mod: mod1
+  key: "2"
+
+focus-screen-3:
+  mod: mod1
+  key: "3"
+
+# Throw window to screen
+throw-screen-1:
+  mod: mod2
+  key: "1"
+
+throw-screen-2:
+  mod: mod2
+  key: "2"
+
+throw-screen-3:
+  mod: mod2
+  key: "3"
+
+# Move windows to spaces (workspaces)
+throw-space-left:
+  mod: mod2
+  key: left
+
+throw-space-right:
+  mod: mod2
+  key: right
+
+# Utility commands
+display-current-layout:
+  mod: mod1
+  key: d
+
+toggle-tiling:
+  mod: mod2
+  key: f
+
+reevaluate-windows:
+  mod: mod2
+  key: z
+
+relaunch-amethyst:
+  mod: mod2
+  key: r
